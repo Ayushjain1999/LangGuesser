@@ -1,0 +1,20 @@
+{
+  "name": "langguesser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.3",
+    "franc": "^6.0.0",
+    "lang": "^0.1.1",
+    "langs": "^2.0.0"
+  }
+}

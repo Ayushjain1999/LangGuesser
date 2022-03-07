@@ -20,13 +20,17 @@ app.get('/home',(req,res)=>{
 app.post('/home',(req,res)=>{
     const language = req.body.lang; 
     const langs = franc(language);
-    try{
+        if(langs==='und')
+        res.send("Sorry Try a lengthier sentence");
+        else{
         const languages = lang.where("3",langs);
-        res.send(languages.name);
-        }catch{
-            res.send('Sorry Try any other sentence');
+       // console.log(languages);
+        if(languages)
+        res.render('view',{ languages });
+        else{
+            res.send("Sorry could not find this language, Try any other sentence");
         }
-
+    }
 })
 
 
